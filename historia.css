@@ -1,0 +1,558 @@
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+
+    * {
+        margin: 0;
+        /*Establece los márgenes de un elemento*/
+        padding: 0;
+        /*El padding de un elemento es el espacio entre su contenido y su borde.*/
+        box-sizing: border-box;
+        /*Dene cómo se calculan el ancho y el alto de un elemento: si deben incluir relleno y bordes, o no.*/
+        font-family: 'Barlow';
+        /*Especifica la fuente de texto para un elemento. Es posible especificar varios nombres de fuente como un sistema 
+     alternativo. Si el navegador no admite la primera fuente, prueba con la siguiente fuente.*/
+    }
+
+    html {
+        scroll-behavior: smooth;
+        /*Especifica si animar suavemente la posición de desplazamiento, en lugar de un salto directo, cuando el
+    usuario hace clic en un enlace dentro de un cuadro  desplazable.*/
+    }
+
+    body {
+        background-color: #dde1e9;
+        /*Establece el color de fondo de un elemento.*/
+    }
+
+
+    .home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(img/1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        justify-content:last baseline;
+    }
+    .home .homeContent{
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 4rem;
+    }
+    .home .homeContent h2{
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-bottom: 2rem;
+        line-height: 7rem;
+        color:rgb(241, 229, 229);
+        text-shadow: var(--box-shadow);
+    }
+    
+    .home .homeContent .home-btn{
+        height: 3rem;
+    }
+    .home .homeContent .home-btn button{
+        font-size: 1.8rem;
+        background-color: var(--black);
+        color: var(--white);
+        border-radius: .7rem;
+        padding: .7rem 2.4rem;
+        cursor: pointer;
+    }
+    .home .homeContent .home-btn button:hover{
+        font-size: 2rem;
+    }
+    
+    
+    
+
+    /* *********** */
+    /* ENCABEZADO - MENU */
+    /* *********** */
+    .contenedor-header {
+        width: 100%; /*Establece el ancho de un elemento.*/
+        position: fixed;
+        /*Especifica el tipo de método de posicionamiento utilizado para un elemento (estatico, relativo, absoluto, fijo o pegajoso).*/
+
+        border-bottom: 1px solid #1f283e;  /*La propiedad border-bottompermite definir de una vez todas las propiedades individuales 
+        border-bottom-color, border-bottom-style, y border-bottom-width*/
+        background-color: rgb(250, 248, 248);
+        z-index: 99;/* Especifica el orden de apilamiento de un elemento. Un elemento con mayor orden de apilamiento siempre esta
+        delante de un elemento con menor orden de apilamiento*/
+         padding: 0 20px;
+    }
+
+    .contenedor-header header {
+        max-width: 1100px; /*Define la anchura maxima de un elemento.*/
+        margin: auto;
+        width: 100%;
+        display: flex; /*Establece el comportamiento de visualización (el tipo de cuadro de representación) de un elemento.*/
+        justify-content: space-between; /*Alinea los elementos del contenedor exible cuando los
+         elementos no utilizan todo el espacio disponible en el eje principal (horizontalmente)*/
+        align-items: center; /*Especifica la alineación predeterminada de los elementos dentro del contenedor exible cuando dichos elementos  ocupan una sola linea.*/
+        padding: 15px 0;
+        font-weight: bold;    
+        color: #5c5959;/*Establece el color del texto.*/
+    }
+
+    .txtRojo {
+        color: #c00c06;       
+       
+       
+    }
+
+    .txtRojo1 {
+        color: #c00c06;
+        font-size: 15px;
+    }
+
+    .contenedor-header header nav a {
+        display: inline-block; /*Establece el comportamiento de visualización (el tipo de
+        cuadro de representación) de un elemento.*/
+        text-decoration: none;
+        color: #837f7f;
+        padding: 5px;
+        text-transform: uppercase; /*Controla las mayúsculas del texto*/
+        font-size: 15px;
+    }
+
+    .contenedor-header header nav a:hover {
+        color: #c00c06;
+    }
+
+    .contenedor-header header .redes a {
+        text-decoration: none;
+        color: #c00c06;
+        display: inline-block;
+        padding: 5px 8px;
+    }
+
+    .contenedor-header header .redes a:hover {
+        color: #423d3d;
+    }
+
+    .nav-responsive {
+        display: none;
+        font-size: 25px;}     
+
+
+    /* *********** */
+    /* CONTACTO */
+    /* *********** */
+    .contacto {
+        color: #fff;
+        background-size: cover;
+        background-position: center center;
+        padding: 100px 20px;
+
+    }
+
+    .contacto .contenido-seccion {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .contacto .contenedor-titulo {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .contacto .contenedor-titulo .numero {
+        color: #c00c06;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+    }
+
+    .contacto .contenedor-titulo .info {
+        margin-left: 30px;
+    }
+
+    .contacto .contenedor-titulo .info .frase {
+        color:#c00c06;
+    }
+
+    .contacto .contenedor-titulo .info h2 {
+        font-size: 3rem;
+        color: #0a0a0a;
+    }
+
+    .contacto .fila {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between; 
+    }
+
+    .contacto .fila .col {
+        width: 48%;
+    }
+
+    .contacto .fila input {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .contacto textarea {
+        display: block;
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 20px;
+        outline: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contacto button {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        border: none;
+        background-color: #c00c06;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contacto .fila-datos {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        font-size: 18px;
+        text-align: center;
+        color: #141414;
+    }
+
+    .contacto i {
+        color: #c00c06;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+    .CONTENEDOR8 {
+        margin-top: 50px;
+        display: flex;
+          background-color: #d12b2b;
+          padding: 25px;
+          color: rgb(247, 243, 243);
+      }
+      .TEXT8 {
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20PX;
+      }
+    
+    
+    /* ********************************** */
+    /*            PLAN DE ESTUDIO       */
+    /* ********************************** */
+    
+    TABLE, TH, TD{
+        margin-top: 50px;
+        text-align:center;    
+        justify-content: center;
+        border: 2PX solid black;
+        border-collapse: collapse;
+        width: 50%;
+        margin-left: 350px;
+        padding: 5px;
+        color: #b10707;
+    
+      }
+
+  TD :hover{
+
+       background-color: #000000;
+       color: #ffffff;
+    
+      }
+
+      
+        
+    /* ********************************** */
+    /*             UTILIDADES             */
+    /* ********************************** */
+    .container {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
+    .heading-1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    
+    /* *********** */
+    /* FOOTER */
+    /* *********** */
+    footer {
+        background-color: #151623;
+        padding: 30px 0;
+    }
+
+    footer .info {
+        display: flex;
+        max-width: 1100px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    footer .info p {
+        color: #797e8e;
+    }
+
+    footer .info a {
+        text-decoration: none;
+        color: #797e8e;
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    /* *********************/
+    /* Whattsapp */
+    /* *********************/
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #c00c06;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .float:hover {
+        text-decoration: none;
+        color: #c00c06;
+        background-color: #fff;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+
+    /* *********** */
+    /* RESPONSIVE */
+    /* *********** */
+    @media only screen and (max-width: 900px) {
+        header nav {
+            position: initial;
+            display: none;
+            transform: translate(0);
+        }
+        TABLE, TH, TD{
+            margin-top: 50px;
+            text-align:center;    
+            justify-content: center;
+            border: 2PX solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: 60px;
+            padding: 5px;
+            color: #b10707;
+        
+          }
+
+        header .redes {
+            display: none;
+        }
+
+        .nav-responsive {
+            display: block;
+        }
+
+        nav.responsive {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #151623;
+            z-index: 99;
+        }
+
+        nav.responsive a {
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
+            font-size: 30px;
+        }
+
+        .inicio .opciones {
+            display: none;
+        }
+
+        .nosotros .fila {
+            display: block;
+        }
+
+        .nosotros .fila .col {
+            width: 100%;
+            margin: auto;
+        }
+
+        .nosotros .fila .col img {
+            max-width: 200px;
+            display: block;
+            margin: auto;
+        }
+
+        .comodidades .fila {
+            display: block;
+        }
+
+        .comodidades .fila .col {
+            width: 100%;
+        }
+
+        .comodidades .fila .col img {
+            max-width: 200px;
+        }
+
+        .equipo .fila {
+            display: block;
+        }
+
+        .equipo .fila .col {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .equipo .fila .col img {
+            max-height: 200px;
+        }
+
+        .equipo .fila .info {
+            max-width: 250px;
+            margin: auto;
+        }
+
+        .contacto .fila {
+            display: block;
+        }
+
+        .contacto .fila .col {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contacto .fila-datos {
+            display: block;
+        }
+
+        .contacto .fila-datos .col {
+            margin-bottom: 20px;
+        }
+
+        footer .info {
+            display: block;
+            text-align: center;
+        }
+
+        footer .info p {
+            margin-bottom: 10px;
+        }
+
+        #especialidades .fila {
+            display: block;
+        }
+
+        #especialidades .fila .item:hover {
+
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        #servicios .card {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #servicios .main {
+            margin: 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+
+        .card {
+            width: 95%;
+            display: inline-block;
+            margin: 10%;
+            text-align: center;
+
+        }
+
+        .card:hover {
+
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        .image img {
+            width: 90%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+
+
+        }
+
+        #servicios.title {
+
+            text-align: center;
+            padding: 25px;
+
+
+        }
+
+        #servicios h1 {
+            font-size: 35px;
+            color: #07ac96;
+        }
+
+        #servicios.des {
+            padding: 15px;
+            text-align: center;
+
+            padding-top: 25px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .container-card{
+            flex-wrap: wrap;
+        }
+        .card1{
+            margin: 15px;
+            width: 60%;
+            margin-left: 16%;           
+        }
+    
+
+
+    }
+        

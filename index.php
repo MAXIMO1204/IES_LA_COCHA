@@ -33,7 +33,7 @@
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="login.html" onclick="seleccionar()">Alumnos</a>
+                <a href="login.php" onclick="seleccionar()">Alumnos</a>
 
             </div>
             <!-- Icono del menu responsive -->
@@ -242,7 +242,7 @@
                     <h4>PROFESORADO PARA LA EDUCACIÓN SECUNDARIA EN HISTORIA</h4>
                     <h3>Duracion: 4 Años</h3>
                     <p>Titulo Validez Nacional</p>
-                    <a href="historia.html" target="_blank">MAS INFO</a>
+                    <a href="historia.php" target="_blank">MAS INFO</a>
                    
 
                 </div>
@@ -257,7 +257,7 @@
                     <h4>PROFESORADO PARA LA EDUCACIÓN SECUNDARIA EN MATEMATICA</h4>
                     <h3>Duracion: 4 Años</h3>
                     <p>Titulo Validez Nacional</p>
-                    <a href="matematica.html" target="_blank">MAS INFO</a>
+                    <a href="matematica.php" target="_blank">MAS INFO</a>
 
                 </div>
             </div>
@@ -271,7 +271,7 @@
                     <h4>TECNICATURA SUPERIOR EN GESTIÓN DE LA PRODUCCIÓN AGROPECUARIA</h4>
                     <h3>Duracion: 3 Años</h3>
                     <p>Titulo Validez Nacional</p>
-                    <a href="gestion.html" target="_blank">MAS INFO</a>
+                    <a href="gestion.php" target="_blank">MAS INFO</a>
 
 
                 </div>
@@ -286,7 +286,7 @@
                     <h4>TECNICATURA SUPERIOR EN AGROINDUSTRIA DE LOS ALIMENTOS</h4>
                     <h3>Duracion: 3 Años</h3>
                     <p>Titulo Validez Nacional</p>
-                    <a href="agroindustria.html" target="_blank">MAS INFO</a>
+                    <a href="agroindustria.php" target="_blank">MAS INFO</a>
 
                 </div>
             </div>
@@ -300,7 +300,7 @@
                     <h4>TECNICATURA SUPERIOR EN DESARROLLO DE SOFTWARE</h4><BR>
                     <h3>Duracion: 3 Años</h3>
                     <p>Titulo Validez Nacional</p>
-                    <a href="software.html" target="_blank">MAS INFO</a>
+                    <a href="software.php" target="_blank">MAS INFO</a>
 
                 </div>
             </div>
@@ -625,5 +625,6 @@
  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 <script src="main.js"></script>
+<script src="scroll.js"></script>
 
 </html>
